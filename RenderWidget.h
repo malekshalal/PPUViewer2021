@@ -23,7 +23,12 @@ class RenderWidget : public QWidget
     QSize sizeHint() const override;
 
 	  void myDrawLine(float x1, float y1, float x2, float y2);
-
+      void circle(float x, float y, float r);
+      void ARC(float xc, float yc, float r);
+      void mydrwhorizontal_line(float x1, float y1, float x2, float y2);
+      void mydrwvertical_line(float x1, float y1, float x2, float y2);
+      void halfcircle(float xc, float yc, float r);
+      void thred(float xc, float yc, float r);
   protected:
     void paintEvent(QPaintEvent *event) override;
 
